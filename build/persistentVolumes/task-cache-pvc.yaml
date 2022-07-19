@@ -2,9 +2,16 @@ kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
   name: pipeline-task-cache-pvc
+  annotations:
+    kubernetes.io/reclaimPolicy: Retain
+    AppCode: CACH-001
+  labels:
+    app: cachito
+    paas.redhat.com/appcode: CACH-001
 spec:
   accessModes:
     - ReadWriteOnce
+  storageClassName: aws-ebs
   resources:
     requests:
       storage: 20Gi
