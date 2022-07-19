@@ -2,7 +2,7 @@ apiVersion: tekton.dev/v1alpha1
 kind: PipelineResource
 metadata:
   name: intermediate
-  namespace: liberty-rest
+  namespace: exd-sp-guild-container-build--cachito-test
 spec:
   params:
   - name: url

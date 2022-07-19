@@ -5,7 +5,7 @@ metadata:
     app.kubernetes.io/instance: liberty-rest-app
     pipeline.openshift.io/type: kubernetes
   name: liberty-rest-app
-  namespace: liberty-rest
+  namespace: exd-sp-guild-container-build--cachito-test
 spec:
   resources:
   - name: app-source

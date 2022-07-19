@@ -5,7 +5,7 @@ metadata:
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: liberty-rest
+    namespace: exd-sp-guild-container-build--cachito-test
     server: https://kubernetes.default.svc
   ignoreDifferences:
   - group: argoproj.io

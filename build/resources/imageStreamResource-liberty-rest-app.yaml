@@ -2,9 +2,9 @@ apiVersion: tekton.dev/v1alpha1
 kind: PipelineResource
 metadata:
   name: liberty-rest-app
-  namespace: liberty-rest
+  namespace: exd-sp-guild-container-build--cachito-test
 spec:
   params:
   - name: url
-    value: image-registry.openshift-image-registry.svc:5000/liberty-rest/liberty-rest-app
+    value: image-registry.openshift-image-registry.svc:5000/exd-sp-guild-container-build--cachito-test/liberty-rest-app
   type: image 
